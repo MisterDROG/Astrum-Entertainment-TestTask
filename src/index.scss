@@ -200,7 +200,7 @@ body {
                 left: 359px;
             }
 
-            @media screen and (max-width: 1600px) {
+            @media screen and (max-width: $middleScreenlWidth) {
                 .imageVito {
                     width: 30%;
                     position: relative;
@@ -219,7 +219,7 @@ body {
                 filter: blur(100%);
             }
 
-            @media screen and (max-width: 1600px) {
+            @media screen and (max-width: $middleScreenlWidth) {
                 .blueGlow {
                     width: 100%;
                     top: 0px;
@@ -228,7 +228,7 @@ body {
             }
         }
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $middleScreenlWidth) {
             .imageVito-container {
                 width: 100%;
             }
@@ -247,7 +247,7 @@ body {
                 margin: 0 0 44px 0;
             }
 
-            @media screen and (max-width: 1600px) {
+            @media screen and (max-width: $middleScreenlWidth) {
                 .title {
                     text-align: center;
                 }
@@ -274,7 +274,7 @@ body {
                     height: 64px;
                 }
 
-                @media screen and (max-width: 1600px) {
+                @media screen and (max-width: $middleScreenlWidth) {
                     .emptyCellFirst {
                         width: 0px;
                     }
@@ -285,7 +285,7 @@ body {
                     padding: 0;
                 }
 
-                @media screen and (max-width: 1600px) {
+                @media screen and (max-width: $middleScreenlWidth) {
                     .emptyCellSecond {
                         width: 160px;
                     }
@@ -304,7 +304,7 @@ body {
                     margin: 0 0 0 11px;
                 }
 
-                @media screen and (max-width: 1600px) {
+                @media screen and (max-width: $middleScreenlWidth) {
                     .subtitle {
                         width: 70px;
                         font-size: 9px;
@@ -346,7 +346,7 @@ body {
                     margin: 3px 60px 0 17px;
                 }
 
-                @media screen and (max-width: 1600px) {
+                @media screen and (max-width: $middleScreenlWidth) {
                     .itemName {
                         width: 90px;
                         font-size: 11px;
@@ -360,7 +360,7 @@ body {
                     text-align: center;
                 }
 
-                @media screen and (max-width: 1600px) {
+                @media screen and (max-width: $middleScreenlWidth) {
                     .amoutFreeServer {
                         margin: 1px 0 0 15px;
                     }
@@ -372,7 +372,7 @@ body {
                     text-align: center;
                 }
 
-                @media screen and (max-width: 1600px) {
+                @media screen and (max-width: $middleScreenlWidth) {
                     .amoutPaidServer {
                         margin: 3px 5px 0 15px;
                     }
@@ -380,7 +380,7 @@ body {
 
             }
 
-            @media screen and (max-width: 1600px) {
+            @media screen and (max-width: $middleScreenlWidth) {
                 .item-container {
                     width: 100%;
                 }
@@ -395,7 +395,7 @@ body {
                     margin: 0 0 0 3px;
                 }
 
-                @media screen and (max-width: 1600px) {
+                @media screen and (max-width: $middleScreenlWidth) {
                     .boxImage {
                         margin: 0 -60px 0 0;
                     }
@@ -408,7 +408,7 @@ body {
 
                 }
 
-                @media screen and (max-width: 1600px) {
+                @media screen and (max-width: $middleScreenlWidth) {
                     .text-container {
                         align-items: center;
                     }
@@ -438,13 +438,13 @@ body {
 
         }
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $middleScreenlWidth) {
             .buy-container {
                 flex-direction: column;
             }
         }
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $middleScreenlWidth) {
             .promotion-container {
                 width: 100%;
                 align-items: center;
@@ -452,7 +452,7 @@ body {
         }
     }
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: $middleScreenlWidth) {
         .content-container {
             flex-direction: column;
         }
@@ -460,7 +460,7 @@ body {
 
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: $middleScreenlWidth) {
     .section1 {
         height: fit-content;
         background-color: red;
