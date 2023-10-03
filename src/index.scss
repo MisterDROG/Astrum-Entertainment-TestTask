@@ -1,0 +1,468 @@
+@import "./vendor/normalize";
+@import url(./vendor/fonts/roboto/robotoFont.scss);
+
+
+$middleScreenlWidth: 1600px;
+$tablelWidth: 900px;
+$phonelWidth: 576px;
+
+
+body {
+    min-width: 340px;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed Google', 'Roboto Google', sans-serif;
+}
+
+
+.section0 {
+    position: relative;
+    background-image: url('./images/backgrounds/Hue_Saturation51.png');
+    height: 892px;
+    background-size: cover;
+    color: white;
+
+    .shadowsHorizontal-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .shadowHorizontal {
+            min-width: 10%;
+            mix-blend-mode: multiply;
+        }
+    }
+
+    .shadowsVertical-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .shadowVertical {
+            mix-blend-mode: multiply;
+        }
+    }
+
+    .glowVertical-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .glowVertical {
+            padding-right: 58px;
+        }
+
+    }
+
+    .glowCentral-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .glowCentral {
+            min-height: 100%;
+            margin-left: 79px;
+            mix-blend-mode: screen;
+        }
+
+        @media screen and (max-width: $tablelWidth) {
+            .glowCentral {
+                margin-left: 0px;
+                min-height: 75%;
+            }
+        }
+
+    }
+
+    .mafiaCostume-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .mafiaCostume1 {
+            min-width: 10%;
+            max-width: 577px;
+
+        }
+
+        .mafiaCostume2 {
+            min-width: 10%;
+            max-width: 678px;
+            padding-right: 24px;
+        }
+
+    }
+
+    .mainContent-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+
+        .allodsLogo {
+            width: 376px;
+        }
+
+        .boxesContent {
+            max-width: 100%;
+            margin-right: 52px;
+        }
+
+        @media screen and (max-width: $tablelWidth) {
+            .boxesContent {
+                margin-right: 0px;
+            }
+        }
+
+        .title {
+            margin: 0;
+            margin-top: 17px;
+            padding: 0;
+            font-size: 42px;
+            line-height: 49.22px;
+            font-weight: 700;
+        }
+
+        .text {
+            margin: 0;
+            margin-top: 20px;
+            padding: 0;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Roboto Google";
+            line-height: 23.44px;
+        }
+
+    }
+}
+
+
+
+.section1 {
+    position: relative;
+    background-image: url('./images/backgrounds/background wall.png');
+    background-position: bottom 5px right 0px;
+    height: 1060px;
+    background-size: contain;
+    color: white;
+
+
+    .glowVertical-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+
+        .glowVertical {
+            padding-right: 17px;
+        }
+
+    }
+
+    .content-container {
+        display: flex;
+
+        .imageVito-container {
+            position: relative;
+            width: 50%;
+
+            .imageVito {
+                position: absolute;
+                top: 31px;
+                left: 359px;
+            }
+
+            @media screen and (max-width: 1600px) {
+                .imageVito {
+                    width: 30%;
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+                    margin: 0 35%;
+                }
+            }
+
+            .blueGlow {
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                max-width: 1100px;
+                mix-blend-mode: lighten;
+                filter: blur(100%);
+            }
+
+            @media screen and (max-width: 1600px) {
+                .blueGlow {
+                    width: 100%;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1600px) {
+            .imageVito-container {
+                width: 100%;
+            }
+        }
+
+        .promotion-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 58px 0 0 0;
+
+            .title {
+                color: #416DF4;
+                font-size: 30px;
+                line-height: 35.16px;
+                margin: 0 0 44px 0;
+            }
+
+            @media screen and (max-width: 1600px) {
+                .title {
+                    text-align: center;
+                }
+            }
+
+            .itemHat-container {
+                display: flex;
+                align-items: center;
+                max-width: 632px;
+                height: 31px;
+                padding: 0 0 9px 0;
+                margin: 0 0;
+                box-sizing: border-box;
+                font-family: "Roboto Google";
+                font-size: 16px;
+                line-height: 18.75px;
+
+                .tableCell {
+                    padding: 0;
+                }
+
+                .emptyCellFirst {
+                    width: 64px;
+                    height: 64px;
+                }
+
+                @media screen and (max-width: 1600px) {
+                    .emptyCellFirst {
+                        width: 0px;
+                    }
+                }
+
+                .emptyCellSecond {
+                    width: 325px;
+                    padding: 0;
+                }
+
+                @media screen and (max-width: 1600px) {
+                    .emptyCellSecond {
+                        width: 160px;
+                    }
+                }
+
+                .subtitle {
+                    width: 140px;
+                    color: #671D00;
+                    font-family: "Roboto Google";
+                    font-size: 12px;
+                    line-height: 14.06px;
+                    border: 1px solid rgba(103, 29, 0, .48);
+                    box-sizing: border-box;
+                    text-align: center;
+                    padding: 3.5px 3px 3.5px;
+                    margin: 0 0 0 11px;
+                }
+
+                @media screen and (max-width: 1600px) {
+                    .subtitle {
+                        width: 70px;
+                        font-size: 9px;
+                    }
+                }
+
+            }
+
+            .item-container {
+                display: flex;
+                align-items: center;
+                border: 1px solid rgba(103, 29, 0, .48);
+                border-radius: 1px;
+                max-width: 632px;
+                height: 74px;
+                margin: 0.95px 0;
+                padding: 5px;
+                box-sizing: border-box;
+                font-family: "Roboto Google";
+                font-size: 16px;
+                line-height: 18.75px;
+
+
+                .tableCellImage {
+                    padding: 0;
+                    width: 64px;
+                    height: 64px;
+                    vertical-align: bottom;
+                }
+
+                .itemImage {
+                    width: 64px;
+                    height: 64px;
+                }
+
+                .itemName {
+                    width: 169px;
+                    padding: 0;
+                    margin: 3px 60px 0 17px;
+                }
+
+                @media screen and (max-width: 1600px) {
+                    .itemName {
+                        width: 90px;
+                        font-size: 11px;
+                        margin: 3px 0px 0 17px;
+                    }
+                }
+
+                .amoutFreeServer {
+                    margin: 1px 0 0 75px;
+                    width: 27px;
+                    text-align: center;
+                }
+
+                @media screen and (max-width: 1600px) {
+                    .amoutFreeServer {
+                        margin: 1px 0 0 15px;
+                    }
+                }
+
+                .amoutPaidServer {
+                    margin: 3px 41px 0 96px;
+                    width: 72px;
+                    text-align: center;
+                }
+
+                @media screen and (max-width: 1600px) {
+                    .amoutPaidServer {
+                        margin: 3px 5px 0 15px;
+                    }
+                }
+
+            }
+
+            @media screen and (max-width: 1600px) {
+                .item-container {
+                    width: 100%;
+                }
+            }
+
+            .buy-container {
+                display: flex;
+                margin: 19px 0 0 0;
+
+                .boxImage {
+                    width: 263px;
+                    margin: 0 0 0 3px;
+                }
+
+                @media screen and (max-width: 1600px) {
+                    .boxImage {
+                        margin: 0 -60px 0 0;
+                    }
+                }
+
+                .text-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+
+                }
+
+                @media screen and (max-width: 1600px) {
+                    .text-container {
+                        align-items: center;
+                    }
+                }
+
+                .priceText {
+                    font-family: "Roboto Google";
+                    font-size: 50px;
+                    line-height: 58.59px;
+                    margin: 0 0 10px 0.5px;
+                }
+
+                .buttonBuy {
+                    width: 180px;
+                    height: 40px;
+                    font-family: "Roboto Google";
+                    font-size: 16px;
+                    line-height: 18.75px;
+                    text-align: center;
+                    background-color: #FCFF00;
+                    border: 0;
+                    border-radius: 7px;
+                    margin: 0 0 57px 0;
+                    padding: 13px 0;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 1600px) {
+            .buy-container {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 1600px) {
+            .promotion-container {
+                width: 100%;
+                align-items: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1600px) {
+        .content-container {
+            flex-direction: column;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    .section1 {
+        height: fit-content;
+        background-color: red;
+    }
+}
